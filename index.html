@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>my calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="divider"></div>
+        <section class="screen">
+            <div class="previous" data-operand-previous></div>
+            <div id="cur" class="current" data-operand-current>0</div>
+        </section>
+
+        <section class="calc_btn_all">
+            <div class="calc_btn_row row0">
+                <button class="calc_btn" onclick="allClear()">AC</button>
+                <button class="calc_btn" onclick="buakLob()">+/-</button>
+                <button class="calc_btn" onclick="percent()">%</button>
+                <button class="oper" onclick="dataOper('/')">÷</button>
+            </div>
+
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="addNumber(7)">7</button>
+                <button class="calc_btn" onclick="addNumber(8)">8</button>
+                <button class="calc_btn" onclick="addNumber(9)">9</button>
+                <button class="oper" onclick="dataOper('*')">x</button>
+            </div>
+
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="addNumber(4)">4</button>
+                <button class="calc_btn" onclick="addNumber(5)">5</button>
+                <button class="calc_btn" onclick="addNumber(6)">6</button>
+                <button class="oper" onclick="dataOper('-')">-</button>
+            </div>
+
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="addNumber(1)">1</button>
+                <button class="calc_btn" onclick="addNumber(2)">2</button>
+                <button class="calc_btn" onclick="addNumber(3)">3</button>
+                <button class="oper" onclick="dataOper('+')">+</button>
+            </div>
+
+            <div class="calc_btn_row">
+                <button class="calc_btn" onclick="delNumber()">←</button>
+                <button class="calc_btn" onclick="addNumber(0)">0</button>
+                <button class="calc_btn" onclick="addNumber('.')">.</button>
+                <button class="oper" onclick="equalHandler()">=</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
